@@ -1,0 +1,22 @@
+/* || Friends List */
+.peopleListItem-u6dGxF .userInfo-2WpsYG {
+    align-items: center;
+}
+.peopleListItem-u6dGxF .userInfo-2WpsYG::before {
+    content: "";
+    position: relative;
+    min-width: 4px;
+    height: 0;
+    margin-left: 5px;
+    border-radius: 25px;
+    transition: all 250ms ease;
+    background-color: var(--pill-default-background);
+}
+.peopleListItem-u6dGxF:hover .userInfo-2WpsYG::before {
+    height: var(--pill-hover-height);
+    margin-right: 7px;
+}
+.peopleListItem-u6dGxF.active-2UF8Zh .userInfo-2WpsYG::before, .peopleListItem-u6dGxF:active .userInfo-2WpsYG::before {
+    height: var(--pill-default-height);
+    margin-right: 7px;
+}

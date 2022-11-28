@@ -1,0 +1,192 @@
+/**
+ * @name Amiable
+ * @description A round, customizable Discord theme that tries to add some friendliness while staying faithful to Discord's vanilla look, feel, and layout.
+ * @author ScoopDS
+ * @version 1.0.0
+ * @source https://github.com/scoopds/discord-amiable
+ * @updateUrl https://github.com/scoopds/discord-amiable/blob/main/amiable.theme.css
+ */
+
+
+/* Main Theme CSS */
+@import url("https://scoopds.github.io/discord-amiable/source.css");
+
+
+/* Addons */ 
+
+/* DiscordRecolor by DevilBro (GPL-2.0) */
+/* Adds custom colors to Discord */
+/* This version is slightly modified for extra customization */
+/* Amiable comes with its own themes, but is compatible with others */
+/* If you're already using DiscordRecolor separately, you can remove this addon */
+@import url("https://scoopds.github.io/discord-amiable/addons/DiscordRecolor.css");
+
+/* Item Pills by LuckFire (MIT) */
+/* Adds colored orbs to the right of hovered/selected elements in a list */
+/* Split into multiple addons - one for each list element of Discord
+
+	/* Item Pills - Autocomplete */
+	@import url("https://scoopds.github.io/discord-amiable/addons/item-pills/autocomplete.css");
+
+	/* Item Pills - Channel List */
+	@import url("https://scoopds.github.io/discord-amiable/addons/item-pills/channels.css");
+
+	/* Item Pills - Discovery */
+	@import url("https://scoopds.github.io/discord-amiable/addons/item-pills/discovery.css");
+
+	/* Item Pills - Friends List */
+	/* Incompatible with Friends Grid */
+	@import url("https://scoopds.github.io/discord-amiable/addons/item-pills/friends-list.css");
+
+	/* Item Pills - Member List */
+	@import url("https://scoopds.github.io/discord-amiable/addons/item-pills/member-list.css");
+
+	/* Item Pills - User Profile / Friends Header */ 
+	/* @import url("https://scoopds.github.io/discord-amiable/addons/item-pills/user-profile.css");
+
+
+/* SettingsIcons by DevilBro (GPL-2.0) */
+/* Adds icons in User/Server/Channel Settings */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+
+/* SettingsModal by DevilBro (GPL-2.0) /*
+/* Changes the appearance of User/Server/Channel Settings into modals */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
+
+/* IconsaxDiscord from Lavender (MIT) */
+/* Replaces Discord's default icons with icons from iconsax.io */
+@import url("https://lavender-discord.github.io/IconsaxDiscord/theme.css");
+
+/* Mac Titlebar by Dyzean (MIT, imported from Tokyo Night) */
+/* Changes the appearance of the minimize/fullscreen/exit buttons to resemble Discord on MacOS */
+@import url("https://scoopds.github.io/discord-amiable/addons/MacTitlebar.css");
+
+/* Context Icons by CorrelanStoma (MIT) */
+/* Adds icons to the right-click context menu */
+@import url("https://crearts-community.github.io/Context-Icons/theme.css");
+
+/* Friends Grid by CorellanStoma (MIT) */
+/* Changes the appearance of the Friends menu */
+/* For use with Item Pills, disable Pills for the Friends List */
+/* @import url("https://crearts-community.github.io/Friends-Grid/theme.css"); 
+
+/* Settings */
+:root {
+
+/* Amiable - Theme Settings */
+	--container-rounding: 		10px 10px 10px 10px;   		/* Default Rounding */
+	--searchbar-rounding:		20px 20px 20px 20px;		/* Search Bar Rounding */
+    --chatbox-rounding: 		25px 25px 25px 25px;    	/* Chatbar Rounding */
+	--embed-rounding:			8px 8px 8px 8px; 			/* Embeds Rounding (Youtube, Twitter, links, etc. does not count for direct image uploads) */
+	--hover-container-rounding: 12px 12px 12px 12px;  		/* Mouse Hover Overlay Rounding */
+	
+	--container-offset: 		7px;				/* Container Top/Bottom Margins */
+	--member-list-offset: 		4px;				/* Member List Container Margins */
+
+/* DiscordRecolor - Settings */
+	--settingsicons: 			1;					/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no	*/
+	--new-discord-logo: 		0; 					/* 0 = old logo, 1 = new logo */
+	--show-discord-logo: 		1; 					/* 0 = hide, 1 = show */
+
+/* DiscordRecolor - Font Settings (uncomment to apply) */
+	/* --font-primary: var(--font) !important;		/* Text */
+	/* --font-display: var(--font) !important;		/* Headers */
+
+/* Item Pills - Settings */
+    --pill-container-rounding: 	var(--hover-container-rounding);
+    --pill-default-height: 		20px;
+    --pill-unread-height: 		4px;
+    --pill-hover-height: 		14px;
+	
+    --float-theme-max-width: 	960px; 				/* to improve Item Pills & Float compatibility */
+
+/* SettingsModal - Settings */
+	--settingsmodalbackground: 	transparent;		/* default:	transparent		(lowest bg color of changed windows, change it in case another theme turns them transparent)	*/
+	--settingsmodalwidth: 		70vw;				/* default:	960px			(width of the settings modal, px/vw)															*/
+	--settingsmodalheight: 		80vh;				/* default:	80vh			(height of the settings modal, px/vh)															*/
+
+/* MacOS Bar - Settings */
+	--button-position: 			row-reverse; 		/* row-reverse = top-right, row = top-left */
+	--mac-os-size: 				7px;
+	--mac-os-rounding:			6.5px;
+
+/* MacOS Bar - Color Codes */ 
+	--close-button-color: 	  #e92a2ade;
+	--maximize-button-color:  #f7bc1bde;
+	--minimize-button-color:  #12db33de;
+
+/* All Themes - Color Codes */
+	--bdfdb-green:				rgb(var(--successcolor));
+	--bdfdb-yellow:				rgb(var(--warningcolor));
+	--bdfdb-red:				rgb(var(--dangercolor));
+
+	--quotes-background-border: var(--background-secondary);
+	--quotes-divider: 			var(--background-accent); 
+	--quotes-text: 			  #fff;
+}
+
+/* DiscordRecolor Themes */
+/* All colors are in RGB format (red, green, blue), use https://www.google.com/search?q=colorpicker	*/
+
+/* Light Theme - Color Codes */
+.theme-light:not(.userProfileOuterThemed-3EfHmv) {
+	--font:						Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;					/*	General Font				*/
+	
+	--accentcolor: 				88,101,242;				/*	Blurple				 - 	default:	88,101,242		 - 	hex:	#5865f2		*/
+	--accentcolor2: 			255,115,250;			/*	Boostpink			 - 	default:	255,115,250		 - 	hex:	#ff73fa		*/
+	--linkcolor: 				0,176,244;				/*	Link Color			 - 	default:	0,176,244		 - 	hex:	#00b0f4		*/
+	--mentioncolor: 			250,166,26;				/*	Highlight Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--successcolor: 			59,165,92;				/*	Success Color		 - 	default:	59,165,92		 - 	hex:	#3ba55c		*/
+	--warningcolor: 			250,166,26;				/*	Warning Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--dangercolor:  			237,66,69;				/*	Danger Color		 - 	default:	237,66,69		 - 	hex:	#ed4245		*/
+	
+	--textbrightest: 			20,20,20;				/*	Text Color 1		 - 	default:	255,255,255		 - 	hex:	#ffffff		*/
+	--textbrighter: 			40,40,40;				/*	Text Color 2		 - 	default:	220,221,222		 - 	hex:	#dcddde		*/
+	--textbright: 				70,70,70;				/*	Text Color 3		 - 	default:	185,187,190		 - 	hex:	#b9bbbe		*/
+	--textdark: 				100,100,100;			/*	Text Color 4		 - 	default:	142,146,151		 - 	hex:	#8e9297		*/
+	--textdarker: 				125,125,125;			/*	Text Color 5		 - 	default:	114,118,125		 - 	hex:	#72767d		*/
+	--textdarkest: 				150,150,150;			/*	Text Color 6		 - 	default:	79,84,92		 - 	hex:	#4f545c		*/
+	
+	--backgroundaccent: 		234,234,234;			/*	Background Accent	 - 	default:	64,68,75		 - 	hex:	#40444b		*/
+	--backgroundprimary: 		245,245,245;			/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
+	--backgroundsecondary: 		234,234,234;			/*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
+	--backgroundsecondaryalt: 	225,225,225;			/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
+	--backgroundtertiary: 		216,216,216;			/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
+	--backgroundfloating:		205,205,205;			/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
+
+    --pill-default-background: rgb(var(--accentcolor)); 	/* Item Pills - Selected/Hover */
+    --pill-unread-background: rgb(var(--mentioncolor));		/* Item Pills - Unread */
+    --pill-connected-background: rgb(var(--successcolor));	/* Item Pills - VC */
+}
+
+/* Dark Theme - Color Codes */
+.theme-dark:not(.userProfileOuterThemed-3EfHmv),
+.theme-amoled:not(.userProfileOuterThemed-3EfHmv) {
+	--font:						Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;					/*	General Font				*/
+	
+	--accentcolor: 				88,101,242;				/*	Blurple				 - 	default:	88,101,242		 - 	hex:	#5865f2		*/
+	--accentcolor2: 			255,115,250;			/*	Boostpink			 - 	default:	255,115,250		 - 	hex:	#ff73fa		*/
+	--linkcolor: 				0,176,244;				/*	Link Color			 - 	default:	0,176,244		 - 	hex:	#00b0f4		*/
+	--mentioncolor: 			250,166,26;				/*	Highlight Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--successcolor: 			59,165,92;				/*	Success Color		 - 	default:	59,165,92		 - 	hex:	#3ba55c		*/
+	--warningcolor: 			250,166,26;				/*	Warning Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--dangercolor:  			237,66,69;				/*	Danger Color		 - 	default:	237,66,69		 - 	hex:	#ed4245		*/
+	
+	--textbrightest: 			255,255,255;			/*	Text Color 1		 - 	default:	255,255,255		 - 	hex:	#ffffff		*/
+	--textbrighter: 			222,222,222;			/*	Text Color 2		 - 	default:	220,221,222		 - 	hex:	#dcddde		*/
+	--textbright: 				185,185,185;			/*	Text Color 3		 - 	default:	185,187,190		 - 	hex:	#b9bbbe		*/
+	--textdark: 				140,140,140;			/*	Text Color 4		 - 	default:	142,146,151		 - 	hex:	#8e9297		*/
+	--textdarker: 				125,125,125;			/*	Text Color 5		 - 	default:	114,118,125		 - 	hex:	#72767d		*/
+	--textdarkest: 				90,90,90;				/*	Text Color 6		 - 	default:	79,84,92		 - 	hex:	#4f545c		*/
+	
+	--backgroundaccent: 		65,66,72;				/*	Background Accent	 - 	default:	64,68,75		 - 	hex:	#40444b		*/
+	--backgroundprimary: 		52,53,58;				/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
+	--backgroundsecondary: 		44,45,49;				/*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
+	--backgroundsecondaryalt: 	38,39,44;				/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
+	--backgroundtertiary: 		31,32,36;				/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
+	--backgroundfloating:		22,23,27;				/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
+
+    --pill-default-background: rgb(var(--accentcolor)); 	/* Item Pills - Selected/Hover */
+    --pill-unread-background: rgb(var(--mentioncolor));		/* Item Pills - Unread */
+    --pill-connected-background: rgb(var(--successcolor));	/* Item Pills - VC */
+}

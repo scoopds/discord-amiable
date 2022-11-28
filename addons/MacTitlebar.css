@@ -1,0 +1,21 @@
+@import url("https://dyzean.github.io/Tokyo-Night/addons/mac-titlebar.css");
+
+/* MacOS Bar - Button Size and Rounding */ 
+.withFrame-2dL45i .winButton-3UMjdg::after {
+    padding: var(--mac-os-size) !important;
+    border-radius: var(--mac-os-rounding) !important;
+  }
+  
+/* MacOS Bar - Extend Button Bounding Boxes */
+.withFrame-2dL45i .winButton-3UMjdg::before { 
+content: '';
+position: absolute;
+display: block;
+top: 0px;
+left: 2px;
+right: 0px;
+bottom: 0px;
+background: rgba(255, 0, 0, 0.0);
+pointer-events: auto;
+margin-left: 2px;
+}

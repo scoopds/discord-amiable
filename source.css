@@ -1,0 +1,171 @@
+/* Amiable Source */
+
+:root {
+	/* Amiable - Theme Settings */
+	--container-rounding: 		10px 10px 10px 10px;   		/* Default Rounding */
+	--searchbar-rounding:		20px 20px 20px 20px;		/* Search Bar Rounding */
+    --chatbox-rounding: 		25px 25px 25px 25px;    	/* Chatbar Rounding */
+	--embed-rounding:			8px 8px 8px 8px; 			/* Embeds Rounding (Youtube, Twitter, links, etc. does not count for direct image uploads) */
+	--hover-container-rounding: 12px 12px 12px 12px;  		/* Mouse Hover Overlay Rounding */
+	
+	--container-offset: 		7px;				/* Container Top/Bottom Margins */
+	--member-list-offset: 		4px;	
+}
+
+/* Containers */
+.peopleColumn-1wMU14, .container-1oAagU, .card-2TuZPZ, .menu-1QACrS, 
+.notice-12Koq-, .notice-2HEN-u, .layer-2aCOJ3, .contentWrapper-3vHNP2,
+.userPopoutOuter-3AVBmJ, .userProfileOuter-1K_BYU, .userProfileOuterUnthemed-2b2rsv,
+.container-3XgAHv, .popout-3gby1q, .container-2ebMPP, .messageContainer-3VTXBC,
+.recentMentionsPopout-2bI1ZN, .messageContainer-8dSNjf, .messages-23can0,
+.root-g14mjS, .footerButton-24QPis, .button-f2h6uQ
+{
+	border-style: hidden;
+	border-color: var(--background-primary);
+	border-radius: var(--container-rounding) !important;
+}
+
+/* Hover Containers */
+.container-32HW5s, .interactive-1vLZ_I, .wrapper-NhbLHG, .content-1gYQeQ, 
+.content-1gYQeQ, .autocompleteRow-14iwvH div.base-2v-uc0
+{
+	border-style: hidden;
+	border-color: var(--background-primary);
+	border-radius: var(--pill-container-rounding) !important;
+}
+
+/* Embeds */
+.embedWrapper-1MtIDg, .embedImage-2Ynqkh img, .embedImage-2Ynqkh video, 
+.embedThumbnail-2nTasl img, .embedThumbnail-2nTasl video, .embedVideo-2ixt5A img, 
+.embedVideo-2ixt5A video, .wrapperPaused-9B8znP, .wrapper-1FP9YQ { 
+	border-radius: var(--embed-rounding) !important;
+}
+
+/* Search Bars */
+.container-1SX9VC, .searchBar-2aylmZ, .searchBarComponent-3N7dCG, 
+.container-2oNtJn, .medium-2NClDM, .inner-2pOSmK,
+.search-39IXmY, .search-2Mwzzq, .searchBar-jGtisZ
+{
+	border-style: hidden;
+	border-color: var(--background-primary);
+	border-radius: var(--searchbar-rounding) !important;
+}
+
+/* Chatbox Rounding */
+.scrollableContainer-15eg7h, .channelTextArea-1FufC0 {
+    border-radius: var(--chatbox-rounding);
+}
+
+/* Main Chat Containers */
+.sidebar-1tnWFu, .chat-2ZfjoI, .container-2cd8Mz,
+.container-3XgAHv {
+	border-radius: var(--container-rounding) !important;
+	margin-right: 7px !important;
+	margin-top: max(calc(var(--container-offset) - 2px), 0px) !important;
+	margin-bottom: var(--container-offset) !important;
+}
+
+/* Chat Headers */
+.title-31SJ6t, .container-ZMc96U, .themed-Hp1KC_ {
+	border-radius: var(--container-rounding) !important;
+	border-style: hidden;
+	border-color: var(--background-primary);
+	bottom: 3px;
+}
+
+/* Members List Rounding */
+.members-3WRCEx, .container-2o3qEW  { /* FIX OFFSET FOR FLOAT */
+	border-radius: var(--container-rounding);
+	border-style: solid;
+	border-width: 0px;
+	border-color: var(--background-primary);
+	
+	margin: var(--member-list-offset);
+	bottom: var(--member-list-offset);
+	margin-left: 0px;
+	margin-right: calc(var(--member-list-offset) - 1px);
+	left: max(calc(var(--member-list-offset) - 3px), 0px);
+}
+
+
+/*//// Individual Fixes ////*/
+
+/* Shorter App Bar */
+.withFrame-2dL45i { height: 18px !important; }
+
+/* Member List Height Fix */
+.members-3WRCEx {
+	--member-offset-add: calc(var(--member-list-offset) + var(--container-offset));
+	height: calc(100vh - 71px - var(--member-offset-add)*2) !important;
+}
+
+/* Chatbar Mouse Fix */
+.base-2jDfDU .channelTextArea-1FufC0 {
+    margin-top: 20px;
+    pointer-events: all;
+}
+
+/* Fix Chatbar Position */
+.form-3gdLxP { 
+    margin-top: -30px; 
+    pointer-events: none;
+} .form-3gdLxP:before { margin-top: 23px;}
+
+/* SettingsModal Support(?) */
+#app-mount .layer-86YKbF ~ .layer-86YKbF {
+	border-radius: var(--container-rounding) !important;
+}
+
+/* Thread Split View Fix */
+.container-3XgAHv {
+	right: 7px;
+	margin-right: 0px !important;
+}
+
+/* Fix Chat Search Contents Cutoff */
+.searchBar-jGtisZ {
+	padding-left: 5px;
+}
+
+/* Header Notice Position Fix */
+.notice-12Koq-, .notice-2HEN-u {
+	margin-right: 7px;
+	margin-top: 4px;
+}
+
+/* Fix Friends List Rounding/BG */
+.peopleColumn-1wMU14 {
+	margin-right: 7px;
+	background: var(--background-primary);
+}
+
+/* Fix Container Backgrounds Overlap */
+.chat-2ZfjoI, .container-2cd8Mz, .tabBody-2dgbAs, .nowPlayingColumn-1eCBCN,
+.container-2o3qEW {
+	background: transparent !important;
+}
+
+/* Fix Main Chat / Friends BG */
+.content-1jQy2l, .tabBody-2dgbAs, .pageWrapper-2PwDoS {
+	margin-top: 3px;
+	border-radius: var(--container-rounding);
+	border-style: hidden;
+	background: var(--background-primary);
+	border-color: var(--background-primary);
+}
+
+/* Hide Dividers */
+.content-1jQy2l:before, .tabBody-2dgbAs:before {
+	display: none; 
+} .scroller-hE2gWq {border:none;}
+
+/* Chat Header Content Position Fix */
+.children-3xh0VB, .toolbar-3_r2xA {
+	margin-top: 3px !important;
+}
+
+/* Jump To Present Bar Width */
+.jumpToPresentBar-1cEnH0, .barBase-3xxDXu {
+	right: 20px;
+	left: 20px;
+}

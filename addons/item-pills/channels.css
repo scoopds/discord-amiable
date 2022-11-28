@@ -1,0 +1,83 @@
+/* || Channels */
+.sidebar-1tnWFu .containerDefault-YUSmu3, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 {
+    overflow: hidden;
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .wrapper-NhbLHG .content-1gYQeQ, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .wrapper-NhbLHG .content-1gYQeQ {
+    padding-left: 0;
+    border-radius: var(--pill-container-rounding);
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .wrapper-NhbLHG .content-1gYQeQ::before, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .wrapper-NhbLHG .content-1gYQeQ::before {
+    content: "";
+    position: relative;
+    min-width: 4px;
+    height: 0;
+    margin-left: 5px;
+    border-radius: 25px;
+    transition: all 250ms ease;
+    background-color: var(--pill-default-background);
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .wrapper-NhbLHG .content-1gYQeQ:hover::before, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .wrapper-NhbLHG .content-1gYQeQ:hover::before {
+    height: var(--pill-hover-height);
+    margin-right: 7px;
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .wrapper-NhbLHG .content-1gYQeQ:active::before, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .wrapper-NhbLHG .content-1gYQeQ:active::before {
+    height: var(--pill-default-height);
+    margin-right: 7px;
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ::before, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ::before {
+    height: var(--pill-default-height);
+    margin-right: 7px;
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ {
+    background-color: var(--background-modifier-active);
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ::before, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ::before {
+    height: var(--pill-default-height);
+    margin-right: 7px;
+    background-color: var(--pill-connected-background);
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .modeUnread-3Cxepe .unreadRelevant-2f-VSK, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .modeUnread-3Cxepe .unreadRelevant-2f-VSK {
+    display: none;
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .modeUnread-3Cxepe .content-1gYQeQ::before, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .modeUnread-3Cxepe .content-1gYQeQ::before {
+    height: var(--pill-unread-height);
+    margin-right: 7px;
+    background-color: var(--pill-unread-background);
+}
+.sidebar-1tnWFu .containerDefault-YUSmu3 .modeUnread-3Cxepe .content-1gYQeQ:hover::before, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .modeUnread-3Cxepe .content-1gYQeQ:hover::before {
+    background-color: var(--pill-unread-background);
+}
+.sidebar-1tnWFu .container-32HW5s {
+    overflow: hidden;
+}
+.sidebar-1tnWFu .container-32HW5s .interactive-1vLZ_I {
+    border-radius: var(--pill-container-rounding);
+}
+.sidebar-1tnWFu .container-32HW5s .interactive-1vLZ_I::before {
+    content: "";
+    position: relative;
+    min-width: 4px;
+    height: 0;
+    margin-left: 5px;
+    border-radius: 25px;
+    transition: all 250ms ease;
+    background-color: var(--pill-default-background);
+}
+.sidebar-1tnWFu .container-32HW5s .interactive-1vLZ_I:hover::before {
+    height: var(--pill-hover-height);
+    margin-right: 7px;
+}
+.sidebar-1tnWFu .container-32HW5s .interactive-1vLZ_I:active::before, .sidebar-1tnWFu .container-32HW5s .interactive-1vLZ_I.interactiveSelected-29CP8y::before {
+    height: var(--pill-default-height);
+    margin-right: 7px;
+}
+.sidebar-1tnWFu .container-32HW5s .interactive-1vLZ_I .layout-1LjVue {
+    padding-left: 1px;
+}
+
+/* Float - Item Pills Fix */
+@media (max-width: var(--float-theme-max-width)) { /* default: 940px */
+    .sidebar-1tnWFu .containerDefault-YUSmu3 .wrapper-NhbLHG .content-1gYQeQ::before, .sidebar-1tnWFu .containerDragBefore-1s5Qg6 .wrapper-NhbLHG .content-1gYQeQ::before {
+        margin-left: 0px !important;
+    }
+}

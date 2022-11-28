@@ -1,0 +1,32 @@
+/* || Discovery */
+.categoryItem-Kc_HK_ .itemInner-3e_4G4 {
+    padding-left: 0;
+}
+.categoryItem-Kc_HK_ .itemInner-3e_4G4::before {
+    content: "";
+    position: relative;
+    min-width: 4px;
+    height: 0;
+    margin-left: 5px;
+    border-radius: 25px;
+    transition: all 250ms ease;
+    background-color: var(--pill-default-background);
+}
+.categoryItem-Kc_HK_ .itemInner-3e_4G4:hover::before {
+    height: var(--pill-hover-height);
+    margin-right: 7px;
+}
+.categoryItem-Kc_HK_ .itemInner-3e_4G4:active::before {
+    height: var(--pill-default-height);
+    margin-right: 7px;
+}
+.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui div.itemInner-3e_4G4 {
+    background-color: var(--background-modifier-selected);
+}
+.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui div.itemInner-3e_4G4::before {
+    height: var(--pill-default-height);
+    margin-right: 7px;
+}
+.categoryItem-Kc_HK_:active .itemInner-3e_4G4 {
+    background-color: var(--background-modifier-active);
+}
