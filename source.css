@@ -74,17 +74,16 @@
 }
 
 /* Members List Rounding */
-.members-3WRCEx, .container-2o3qEW  { /* FIX OFFSET FOR FLOAT */
-	border-radius: var(--container-rounding);
-	border-style: solid;
-	border-width: 0px;
-	border-color: var(--background-primary);
+.members-3WRCEx { /* FIX OFFSET FOR FLOAT */
+	border-radius: var(--container-rounding) !important;
+	border-style: solid !important;
+	border-width: 0px !important;
+	border-color: var(--background-primary) !important;
 	
-	margin: var(--member-list-offset);
-	bottom: var(--member-list-offset);
-	margin-left: 0px;
-	margin-right: calc(var(--member-list-offset) - 1px);
-	left: max(calc(var(--member-list-offset) - 3px), 0px);
+	top: var(--member-list-offset) !important;
+	bottom: var(--member-list-offset) !important;
+	margin-right: calc(var(--member-list-offset) + 2px) !important;
+	left: max(calc(var(--member-list-offset) - 3px), 0px) !important;
 }
 
 
@@ -96,7 +95,7 @@
 /* Member List Height Fix */
 .members-3WRCEx {
 	--member-offset-add: calc(var(--member-list-offset) + var(--container-offset));
-	height: calc(100vh - 71px - var(--member-offset-add)*2) !important;
+	height: calc(100vh - 67px - calc(var(--member-offset-add)*2)) !important;
 }
 
 /* Chatbar Mouse Fix */
