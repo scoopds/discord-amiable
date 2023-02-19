@@ -13,23 +13,40 @@
 }
 
 /* Containers */
-.peopleColumn-1wMU14, .container-1oAagU, .card-2TuZPZ, .menu-1QACrS, 
+.peopleColumn-1wMU14, .container-1oAagU, .card-2TuZPZ, .menu-1QACrS,
 .notice-12Koq-, .notice-2HEN-u, .layer-2aCOJ3, .contentWrapper-3vHNP2,
 .userPopoutOuter-3AVBmJ, .userProfileOuter-1K_BYU, .userProfileOuterUnthemed-2b2rsv,
 .container-3XgAHv, .popout-3gby1q, .container-2ebMPP, .messageContainer-3VTXBC,
 .recentMentionsPopout-2bI1ZN, .messageContainer-8dSNjf, .messages-23can0,
-.root-g14mjS, .footerButton-24QPis, .button-f2h6uQ
+.root-g14mjS, .container-3wLKDe, .container-2qVG6q, .container-5SvbtF,
+.overlayBackground-1KgwVi, .messageInput-1KI8l8, .messageInputContainer-2rGDH8,
+.userProfileInnerThemedWithBanner-2624Yx::before, .input-2g-os5, .container-YkUktl,
+.tier-3CS7-p, .header-2pgFQm, .row-1PT9E8, .animatedContainer-2laTjx,
+.container-1NXEtd, .panels-3wFtMD, .privateChannels-oVe7HL, .container-ZMc96U[role="navigation"],
+.bd-notice, .chatContent-3KubbW, .messagesPopoutWrap-3zryHW, .messageGroupWrapper-1jf_7C,
+.connectedAccountContainer-2TWiXT
 {
-	border-style: hidden;
-	border-color: var(--background-primary);
+	/*border-style: hidden;
+	border-color: var(--background-primary);*/
 	border-radius: var(--container-rounding) !important;
+}
+
+/* Buttons */
+.footerButton-24QPis, .button-f2h6uQ, .pill-3pRQlO, .select-1Ia3hD,
+.botTag-2mryIa, .botTagRegular-kpctgU, .botTag-7aX5WZ, .px-MnE_OR, 
+.cta-35vqLn, .button-ejjZWC
+{
+	border-radius: var(--button-rounding) !important;
 }
 
 /* Hover Containers */
 .container-32HW5s, .interactive-1vLZ_I, .wrapper-NhbLHG, .content-1gYQeQ, 
-.content-1gYQeQ, .autocompleteRow-14iwvH div.base-2v-uc0
+.content-1gYQeQ, .autocompleteRow-14iwvH div.base-2v-uc0, .rolePill-2IJ1vo,
+.avatarWrapper-1B9FTW, .layout-1qmrhw, .radioBar-3w9XY-, .radioBar-1XgZqD, 
+.item-1TA5qI, .layerContainer-2v_Sit, .tooltip-14MtrL
 {
 	border-style: hidden;
+	overflow: visible;
 	border-color: var(--background-primary);
 	border-radius: var(--pill-container-rounding) !important;
 }
@@ -43,8 +60,9 @@
 
 /* Search Bars */
 .container-1SX9VC, .searchBar-2aylmZ, .searchBarComponent-3N7dCG, 
-.container-2oNtJn, .medium-2NClDM, .inner-2pOSmK,
-.search-39IXmY, .search-2Mwzzq, .searchBar-jGtisZ
+.container-2oNtJn, .medium-2NClDM, .inner-2pOSmK, .inputDefault-Ciwd-S,
+.search-39IXmY, .search-2Mwzzq, .searchBar-jGtisZ, .DraftEditor-root,
+.container-JhuCwn, .collapsed-23aTv6, .header-1Uy0p6
 {
 	border-style: hidden;
 	border-color: var(--background-primary);
@@ -61,12 +79,12 @@
 .container-3XgAHv {
 	border-radius: var(--container-rounding) !important;
 	margin-right: 7px !important;
-	margin-top: max(calc(var(--container-offset) - 2px), 0px) !important;
+	margin-top: max(calc(var(--container-offset) - 3px), 0px) !important;
 	margin-bottom: var(--container-offset) !important;
 }
 
 /* Chat Headers */
-.title-31SJ6t {
+.title-31SJ6t, .container-ZMc96U[role="navigation"] {
 	border-radius: var(--container-rounding) !important;
 	border-style: hidden;
 	border-color: var(--background-primary);
@@ -90,7 +108,7 @@
 /*//// Individual Fixes ////*/
 
 /* Shorter App Bar */
-.withFrame-2dL45i { height: 18px !important; }
+.withFrame-2dL45i { height: 20px !important; }
 
 /* Member List Height Fix */
 .members-3WRCEx {
@@ -127,7 +145,7 @@
 }
 
 /* Header Notice Position Fix */
-.notice-12Koq-, .notice-2HEN-u {
+.notice-12Koq-, .notice-2HEN-u, .bd-notice {
 	margin-right: 7px;
 	margin-top: 4px;
 }
@@ -167,4 +185,29 @@
 .jumpToPresentBar-1cEnH0, .barBase-3xxDXu {
 	right: 20px;
 	left: 20px;
+}
+
+/* Fix Invite */
+.flex-3BkGQD { background-color: transparent; }
+.copyButton-2k4drX { margin-left: 10px;}
+
+/* Fix Channel List Rounding */
+.container-1NXEtd, .privateChannels-oVe7HL, .animatedContainer-2laTjx {
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+} .panels-3wFtMD {
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+
+/* Fix VC Chat BG/Position */
+.wrapper-1gVUIN {
+	background-color: var(--background-primary);
+	background: fixed;
+	border-radius: 0px;
+	margin-right: calc(-1*var(--container-offset));
+} .channelChatWrapper-35N3nR {
+	margin-left: var(--container-offset);
+	margin-top: -4px;
+	margin-bottom: -4px;
 }
