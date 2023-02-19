@@ -25,12 +25,10 @@ Proper support for other Discord clients may or may not come later
 #### Included/Modified Addons
 - [DiscordRecolor by DevilBro](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/DiscordRecolor)
 - [Item Pills by LuckFire](https://github.com/discord-extensions/item-pills)
+- [Mac Titlebar by Dyzean](https://github.com/Dyzean/Tokyo-Night/blob/main/addons/mac-titlebar.css) (imported from [Tokyo Night](https://github.com/Dyzean/Tokyo-Night))
 
 #### Imported Addons
 - [Context Icons by CorrelanStoma](https://github.com/CreArts-Community/Context-Icons)
 - [Friends Grid by CorellanStoma](https://github.com/CreArts-Community/Friends-Grid)
 - [IconsaxDiscord by Obscure](https://github.com/Lavender-Discord/IconsaxDiscord) (imported from [Lavender](https://github.com/Lavender-Discord/Lavender))
-- [Mac Titlebar by Dyzean](https://github.com/Dyzean/Tokyo-Night/blob/main/addons/mac-titlebar.css) (imported from [Tokyo Night](https://github.com/Dyzean/Tokyo-Night))
 - [SettingsModal by DevilBro](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal)
-
-
