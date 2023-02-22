@@ -2,7 +2,7 @@
  * @name Amiable
  * @description A round, customizable Discord theme that tries to add some friendliness while staying faithful to Discord's vanilla look, feel, and layout.
  * @author ScoopDS
- * @version 1.0.0
+ * @version 1.1.0
  * @source https://github.com/scoopds/discord-amiable
  * @updateUrl https://github.com/scoopds/discord-amiable/blob/main/amiable.theme.css
  */
@@ -77,11 +77,14 @@
 	--container-rounding: 		10px 10px 10px 10px;   		/* Default Rounding */
 	--searchbar-rounding:		20px 20px 20px 20px;		/* Search Bar Rounding */
     --chatbox-rounding: 		25px 25px 25px 25px;    	/* Chatbar Rounding */
-	--embed-rounding:			8px 8px 8px 8px; 			/* Embeds Rounding (Youtube, Twitter, links, etc. does not count for direct image uploads) */
+	
+	--avatar-rounding:			50%;						/* Avatar Rounding (does not affect status) */
+	--button-rounding: 			25px 25px 25px 25px;   		/* Button Rounding */
 	--hover-container-rounding: 12px 12px 12px 12px;  		/* Mouse Hover Overlay Rounding */
+	--embed-rounding:			8px 8px 8px 8px; 			/* Embeds Rounding (Youtube, Twitter, links, etc.) */
 	
 	--container-offset: 		7px;				/* Container Top/Bottom Margins */
-	--member-list-offset: 		4px;				/* Member List Container Margins */
+	--member-list-offset: 		4px;				/* Member List / Search Margins */
 
 /* DiscordRecolor - Settings */
 	--settingsicons: 			1;					/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no	*/
