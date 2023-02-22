@@ -30,7 +30,7 @@
 .fieldBackground-2TpuOY, .backgroundContainer-gUNEZU, .containerFooter-3BSQ3U,
 .wrapper-1HIH0j, .sliderContainer-2nidiS, .labelContainer-2vJzYL, .card-16VQ8C, .previewMessage-2g_aBv,
 .auto-2K3UW5, .perksModal-CLcR1c, .ctaBar-Nhk8yY, .tierWrapper-CsnudO, .tier-lFqDUs,
-.item-3mHhwr, .header-3OsQeK
+.item-3mHhwr, .header-3OsQeK, .membersWrap-3NUR2t, .input-3r5zZY, .result-u66Ywh, .quickswitcher-pKcM9U
 {
 	/*border-style: hidden;
 	border-color: var(--background-primary);*/
@@ -61,7 +61,7 @@
 .embedWrapper-1MtIDg, .embedImage-2Ynqkh img, .embedImage-2Ynqkh video, 
 .embedThumbnail-2nTasl img, .embedThumbnail-2nTasl video, 
 .embedVideo-2ixt5A img, .embedVideo-2ixt5A video, .wrapperPaused-9B8znP, 
-.wrapper-1FP9YQ, .clickableWrapper-2WTAkL img
+.wrapper-1FP9YQ, .clickableWrapper-2WTAkL img, .stickerAsset-4c7Oqy
 { 
 	border-radius: var(--embed-rounding) !important;
 }
@@ -83,7 +83,7 @@
 }
 
 /* Avatar Rounding */
-[class^='avatar'] {
+[class^='avatar-'] {
 	border-radius: var(--avatar-rounding) !important;
 } mask[id*='avatar'] circle[cx='0.5'] {
 	r: 2;
@@ -128,7 +128,7 @@
 /* Member List Height Fix */
 .members-3WRCEx {
 	--member-offset-add: calc(var(--member-list-offset) + var(--container-offset));
-	height: calc(100vh - 67px - calc(var(--member-offset-add)*2)) !important;
+	height: calc(100vh - 68px - calc(var(--member-offset-add)*2)) !important;
 }
 
 /* Chatbar Mouse Fix */
@@ -156,13 +156,13 @@
 
 /* Fix Chat Search Contents Cutoff */
 .searchBar-jGtisZ {
-	padding-left: 5px;
+	padding-left: 4px;
 }
 
 /* Header Notice Position Fix */
 .notice-12Koq-, .notice-2HEN-u, .bd-notice {
 	margin-right: 7px;
-	margin-top: 4px;
+	margin-top: 3px;
 }
 
 /* Fix Friends List Rounding/BG */
@@ -189,7 +189,9 @@
 /* Hide Dividers */
 .content-1jQy2l:before, .tabBody-2dgbAs:before {
 	display: none; 
-} .scroller-hE2gWq {border:none;}
+} .scroller-hE2gWq {
+	border:none;
+}
 
 /* Chat Header Content Position Fix */
 .children-3xh0VB, .toolbar-3_r2xA {
@@ -234,13 +236,18 @@
 	margin-left: 1px !important;
 }
 
-/* Fix Popout Shadows/Overflow */
-div [id^='popout_'] {
+/* Tweaked Search Popout */
+div [id^='popout_13021'] {
   overflow: hidden;
   filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.10))
 }
 
 /* Fix Server Icon in Emoji Search */
 .mask-1hlQQ6 foreignObject {
-	mask: url(#svg-mask-status-online);
+	mask: url(#svg-mask-squircle);
+}
+
+/* Hide Search Arrows */
+.arrowGroup-25Wc10 {
+	display: none;
 }
