@@ -114,9 +114,9 @@
 	--mac-os-rounding:			6.5px;
 
 /* MacOS Bar - Color Codes */ 
-	--close-button-color: 	  #e92a2ade;
-	--maximize-button-color:  #f7bc1bde;
-	--minimize-button-color:  #12db33de;
+	--close-button-color: 	  #e92a2ade !important;
+	--minimize-button-color:  #f7bc1bde !important;
+	--maximize-button-color:  #12db33de !important;
 
 /* All Themes - Color Codes */
 	--bdfdb-green:				rgb(var(--successcolor));
