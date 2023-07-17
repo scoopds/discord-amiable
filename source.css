@@ -1,5 +1,3 @@
-/* Amiable Source */
-
 :root {
 	/* Amiable - Theme Settings */
 	--container-rounding: 		10px 10px 10px 10px;   		/* Default Rounding */
@@ -11,6 +9,8 @@
 	--container-offset: 		7px;				/* Container Top/Bottom Margins */
 	--member-list-offset: 		4px;	
 }
+
+/* Amiable Source */
 
 /* Containers */
 .peopleColumn-1wMU14, .container-1oAagU, .card-2TuZPZ, .menu-1QACrS,
@@ -49,7 +49,7 @@
 .container-32HW5s, .interactive-1vLZ_I, .wrapper-NhbLHG, .content-1gYQeQ, 
 .content-1gYQeQ, .autocompleteRow-14iwvH div.base-2v-uc0, .rolePill-2IJ1vo,
 .avatarWrapper-1B9FTW, .layout-1qmrhw, .radioBar-3w9XY-, .radioBar-1XgZqD, 
-.item-1TA5qI, .layerContainer-2v_Sit, .tooltip-14MtrL
+.item-1TA5qI, .layerContainer-2v_Sit, .tooltip-14MtrL, .link-1_kTxV
 {
 	border-style: hidden;
 	overflow: visible;
@@ -131,17 +131,13 @@
 	height: calc(100vh - 68px - calc(var(--member-offset-add)*2)) !important;
 }
 
-/* Chatbar Mouse Fix */
-.base-2jDfDU .channelTextArea-1FufC0 {
-    margin-top: 20px;
-    pointer-events: all;
-}
 
-/* Fix Chatbar Position */
-.form-3gdLxP { 
-    margin-top: -30px; 
-    pointer-events: none;
-} .form-3gdLxP:before { margin-top: 23px;}
+
+
+/* Fix Rules Screening */
+.wrapper-2SplAX {
+	pointer-events: all;
+}
 
 /* SettingsModal Support(?) */
 #app-mount .layer-86YKbF ~ .layer-86YKbF {
@@ -236,12 +232,6 @@
 	margin-left: 1px !important;
 }
 
-/* Tweaked Search Popout */
-div [id^='popout_13021'] {
-  overflow: hidden;
-  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.10))
-}
-
 /* Fix Server Icon in Emoji Search */
 .mask-1hlQQ6 foreignObject {
 	mask: url(#svg-mask-squircle);
@@ -250,4 +240,10 @@ div [id^='popout_13021'] {
 /* Hide Search Arrows */
 .arrowGroup-25Wc10 {
 	display: none;
+}
+
+/* Fix Avatar Popout Hover */
+.avatarWrapperNormal-1tQ3Je {
+overflow:hidden;
+border-bottom-right-radius: 10% !important;
 }
