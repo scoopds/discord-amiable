@@ -28,8 +28,8 @@
 	/* Item Pills - Autocomplete */
 	@import url("https://scoopds.github.io/discord-amiable/addons/item-pills/autocomplete.css");
 
-	/* Item Pills - Channel List */
-	@import url("https://scoopds.github.io/discord-amiable/addons/item-pills/channels.css");
+	/* Item Pills - Channel List (seems broken) */
+	/* @import url("https://scoopds.github.io/discord-amiable/addons/item-pills/channels.css");
 
 	/* Item Pills - Discovery */
 	@import url("https://scoopds.github.io/discord-amiable/addons/item-pills/discovery.css");
@@ -63,7 +63,7 @@
 
 /* Context Icons by CorrelanStoma (MIT) */
 /* Adds icons to the right-click context menu */
-@import url("https://crearts-community.github.io/Context-Icons/theme.css");
+/* @import url("https://crearts-community.github.io/Context-Icons/theme.css");
 
 /* Friends Grid by CorellanStoma (MIT) */
 /* Changes the appearance of the Friends menu */
@@ -88,7 +88,7 @@
 
 /* DiscordRecolor - Settings */
 	--settingsicons: 			1;					/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no	*/
-	--new-discord-logo: 		0; 					/* 0 = old logo, 1 = new logo */
+	--new-discord-logo: 		1; 					/* 0 = old logo, 1 = new logo */
 	--show-discord-logo: 		1; 					/* 0 = hide, 1 = show */
 
 /* DiscordRecolor - Font Settings (uncomment to apply) */
@@ -193,3 +193,4 @@
     --pill-unread-background: rgb(var(--mentioncolor));		/* Item Pills - Unread */
     --pill-connected-background: rgb(var(--successcolor));	/* Item Pills - VC */
 }
+
