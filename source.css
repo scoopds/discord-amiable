@@ -247,14 +247,3 @@
 overflow:hidden;
 border-bottom-right-radius: 10% !important;
 }
-
-/* Mac Titlebar Fix */
-.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(1) {
-  order: 3;
-}
-.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(2) {
-  order: 2;
-}
-.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(3) {
-  order: 1;
-}
