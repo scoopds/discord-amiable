@@ -19,3 +19,14 @@ background: rgba(255, 0, 0, 0.0);
 pointer-events: auto;
 margin-left: 2px;
 }
+
+/* Mac Titlebar Order Fix */
+.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(1) {
+  order: 3 !important;
+}
+.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(2) {
+  order: 2 !important; 
+}
+.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(3) {
+  order: 1 !important;
+}
