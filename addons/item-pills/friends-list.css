@@ -1,8 +1,8 @@
 /* || Friends List */
-.peopleListItem-u6dGxF .userInfo-2WpsYG {
+.peopleListItem_d14722 .userInfo__18240 {
     align-items: center;
 }
-.peopleListItem-u6dGxF .userInfo-2WpsYG::before {
+.peopleListItem_d14722 .userInfo__18240::before {
     content: "";
     position: relative;
     min-width: 4px;
@@ -12,11 +12,11 @@
     transition: all 250ms ease;
     background-color: var(--pill-default-background);
 }
-.peopleListItem-u6dGxF:hover .userInfo-2WpsYG::before {
+.peopleListItem_d14722:hover .userInfo__18240::before {
     height: var(--pill-hover-height);
     margin-right: 7px;
 }
-.peopleListItem-u6dGxF.active-2UF8Zh .userInfo-2WpsYG::before, .peopleListItem-u6dGxF:active .userInfo-2WpsYG::before {
+.peopleListItem_d14722.active__6b8ff .userInfo__18240::before, .peopleListItem_d14722:active .userInfo__18240::before {
     height: var(--pill-default-height);
     margin-right: 7px;
 }
