@@ -1,4 +1,4 @@
-## Amiable - Discord Theme
+## Amiable - Discord Theme (CURRENTLY BROKEN)
 ![](https://github.com/scoopds/discord-amiable/blob/main/previews/top.png?raw=true)
 
 A round, customizable Discord theme that tries to add some friendliness while staying faithful to Discord's vanilla look, feel, and layout.
