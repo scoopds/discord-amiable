@@ -1,13 +1,13 @@
 @import url("https://dyzean.github.io/Tokyo-Night/addons/mac-titlebar.css");
 
 /* MacOS Bar - Button Size and Rounding */ 
-.withFrame-2dL45i .winButton-3UMjdg::after {
+.withFrame__485f4 .winButton__88672::after {
     padding: var(--mac-os-size) !important;
     border-radius: var(--mac-os-rounding) !important;
   }
-  
+
 /* MacOS Bar - Extend Button Bounding Boxes */
-.withFrame-2dL45i .winButton-3UMjdg::before { 
+.withFrame__485f4 .winButton__88672::before { 
 content: '';
 position: absolute;
 display: block;
@@ -20,13 +20,13 @@ pointer-events: auto;
 margin-left: 2px;
 }
 
-/* Mac Titlebar Order Fix */
-.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(1) {
+/* Mac Titlebar Order Match Windows */
+.withFrame__485f4 .winButton__88672:nth-last-child(1) {
   order: 3 !important;
 }
-.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(2) {
+.withFrame__485f4 .winButton__88672:nth-last-child(2) {
   order: 2 !important; 
 }
-.withFrame-2dL45i .winButton-3UMjdg:nth-last-child(3) {
+.withFrame__485f4 .winButton__88672:nth-last-child(3) {
   order: 1 !important;
 }
