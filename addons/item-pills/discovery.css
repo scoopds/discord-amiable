@@ -1,8 +1,8 @@
 /* || Discovery */
-.categoryItem-Kc_HK_ .itemInner-3e_4G4 {
+.categoryItem_b1be5c .itemInner__9e755 {
     padding-left: 0;
 }
-.categoryItem-Kc_HK_ .itemInner-3e_4G4::before {
+.categoryItem_b1be5c .itemInner__9e755::before {
     content: "";
     position: relative;
     min-width: 4px;
@@ -12,21 +12,21 @@
     transition: all 250ms ease;
     background-color: var(--pill-default-background);
 }
-.categoryItem-Kc_HK_ .itemInner-3e_4G4:hover::before {
+.categoryItem_b1be5c .itemInner__9e755:hover::before {
     height: var(--pill-hover-height);
     margin-right: 7px;
 }
-.categoryItem-Kc_HK_ .itemInner-3e_4G4:active::before {
+.categoryItem_b1be5c .itemInner__9e755:active::before {
     height: var(--pill-default-height);
     margin-right: 7px;
 }
-.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui div.itemInner-3e_4G4 {
+.categoryItem_b1be5c.selectedCategoryItem__0bf4c div.itemInner__9e755 {
     background-color: var(--background-modifier-selected);
 }
-.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui div.itemInner-3e_4G4::before {
+.categoryItem_b1be5c.selectedCategoryItem__0bf4c div.itemInner__9e755::before {
     height: var(--pill-default-height);
     margin-right: 7px;
 }
-.categoryItem-Kc_HK_:active .itemInner-3e_4G4 {
+.categoryItem_b1be5c:active .itemInner__9e755 {
     background-color: var(--background-modifier-active);
 }
